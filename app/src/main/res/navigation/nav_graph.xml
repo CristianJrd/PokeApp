@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/id_nav_graph_dashboard_fragment">
+
+    <fragment
+        android:id="@+id/id_nav_graph_dashboard_fragment"
+        android:name="com.example.pokedex.dashboard.ui.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard">
+
+        <action
+            android:id="@+id/id_nav_action_dashboard_fragment_to_info_species_fragment"
+            app:destination="@id/id_nav_graph_info_species_fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/id_nav_graph_info_species_fragment"
+        android:name="com.example.pokedex.info_species.ui.InfoSpeciesFragment"
+        android:label="Info Species Pokemon"
+        tools:layout="@layout/fragment_info_species_pokemon">
+
+        <action
+            android:id="@+id/action_id_nav_graph_info_species_fragment_to_abilities_fragment"
+            app:destination="@id/id_nav_graph_abilities_fragment" />
+        <action
+            android:id="@+id/action_id_nav_graph_info_species_fragment_to_evolution_chain_fragment"
+            app:destination="@id/id_nav_graph_evolution_chain_fragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/id_nav_graph_abilities_fragment"
+        android:name="com.example.pokedex.abilities.ui.AbilitiesFragment"
+        android:label="AbilitiesFragment"
+        tools:layout="@layout/fragment_abilities_pokemon" />
+
+    <fragment
+        android:id="@+id/id_nav_graph_evolution_chain_fragment"
+        android:name="com.example.pokedex.evolution_chain.ui.EvolutionChainFragment"
+        android:label="EvolutionChainFragment"
+        tools:layout="@layout/fragment_evolution_chain_pokemon">
+        <action
+            android:id="@+id/action_id_nav_graph_evolution_chain_fragment_to_id_nav_graph_dashboard_fragment"
+            app:destination="@id/id_nav_graph_dashboard_fragment" />
+    </fragment>
+
+
+</navigation>

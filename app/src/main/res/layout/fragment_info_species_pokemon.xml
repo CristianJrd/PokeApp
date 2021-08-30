@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_title_name_pokemon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tool:text="Charmander"
+            android:textSize="32sp"
+            android:textAlignment="center"
+            android:textColor="@color/color_red_pokeball"
+            android:textStyle="bold"
+            android:layout_margin="@dimen/margin_medium"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_info_species_base_happiness"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tool:text="Felicidad base: 70"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            app:layout_constraintTop_toBottomOf="@id/tv_title_name_pokemon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_info_species_capture_ratio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tool:text="Ratio Captura: 45"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_margin="@dimen/margin_medium"
+            app:layout_constraintTop_toBottomOf="@id/tv_info_species_base_happiness"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_info_species_egg_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tool:text="Grupos huevo: monster, dragon"
+            android:textSize="24sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_margin="@dimen/margin_medium"
+            app:layout_constraintTop_toBottomOf="@id/tv_info_species_capture_ratio"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_info_species_evolution_chain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_evolution_chain"
+            android:textColor="@color/white"
+            android:background="@drawable/button_red"
+            android:layout_marginTop="48dp"
+            android:layout_marginBottom="@dimen/margin_large"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            app:layout_constraintTop_toBottomOf="@id/tv_info_species_egg_group"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_info_species_abilities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/label_abilities"
+            android:textColor="@color/white"
+            android:background="@drawable/button_red"
+            android:layout_marginVertical="@dimen/margin_large"
+            android:layout_marginHorizontal="@dimen/margin_medium"
+            app:layout_constraintTop_toBottomOf="@id/btn_info_species_evolution_chain"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

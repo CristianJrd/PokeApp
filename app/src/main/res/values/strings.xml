@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PokeDex</string>
+    <string name="label_base_happiness">Felicidad base: %1$s</string>
+    <string name="label_capture_ratio">Ratio Captura: %1$s</string>
+    <string name="label_egg_group">Grupos huevo: %1$s</string>
+    <string name="label_favorite_pokemon">Favorito - %1$s</string>
+    <string name="label_error_pokemon">Error - %1$s</string>
+    <string name="label_evolution_chain">Linea Evolutiva</string>
+    <string name="label_abilities">Habilidades</string>
+</resources>
